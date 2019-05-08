@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'client';
+  show:boolean=false;
+  show_2:boolean=false;
+  show_3:boolean=false;
+  feedback:boolean=false;
+  mascot_name:string;
+  constructor(){
+    this.show=true;
+  }
+   movetosecond(){
+     this.show=false;
+     this.show_2=true;
+   }
+   movetothird(){
+    this.show_2=false;
+    this.show_3=true;
+  }
+  openFeedback(name:string){
+    this.feedback=true;
+    console.log("feedback");
+    this.mascot_name=name;
+  }
 }
