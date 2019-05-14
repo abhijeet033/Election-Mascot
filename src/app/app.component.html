@@ -18,7 +18,7 @@
 <ng-container *ngIf="show_3">
     <div >
       <h3>Department:Facilities</h3>
-      <div class="content">
+      <div class="space content">
             <p class="department">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
          Gravida arcu ac tortor dignissim convallis. Turpis egestas integer 
@@ -29,9 +29,9 @@
           consectetur adipiscing. Dignissim cras tincidunt lobortis feugiat vivamus at.
            Sollicitudin nibh sit amet commodo nulla. 
            </p>
-          <button class="facilities btn btn-primary">Move On to the next department</button><br><br><br>
+          <button class="facilities btn btn-primary">Move On to the next department</button><br>
     </div>
-        <div class="content">
+        <div class="space content">
       <p class="department2">Choose your mascot for this department(hover over each mascot to know it's meaning)</p>
       <img class="mascot" src="../assets/images/oyster.jpg" (click)="openFeedback('World is my oyster')"  alt="Quantiphi">
       <img class="mascot" src="../assets/images/Meoq.jpg" (click)="openFeedback('Cats Meow')"  alt="Quantiphi">
@@ -48,7 +48,7 @@
          <div class="mascot_name">Dead Fish</div>
          <div class="mascot_name">Wild Goose chase</div>
        </div><br>
-      <ng-container *ngIf="feedback">
+      <ng-container *ngIf="feedback" class="space">
           <div class="feedback">
               <p class="third_header">Overall rating for Facilities(1 -lowest,5 -highest)</p>
               <p>Share your reasons for selecting {{mascot_name}}</p>
@@ -73,19 +73,19 @@
               <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
               <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
               <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
-              <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
+              <!-- <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p> -->
           </div>
           <div class="feedback">
             <p class="third_header">Any more reasons?</p>
             <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
             <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
             <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
-            <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
+            <!-- <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p> -->
 
           </div>
           <div class="feedback">
             <p class="third_header">suggestions</p>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
           </div>
       </ng-container>
     </div>

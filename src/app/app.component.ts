@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'client';
+  title = 'Election Mascot';
   show:boolean=false;
   show_2:boolean=false;
   show_3:boolean=false;
