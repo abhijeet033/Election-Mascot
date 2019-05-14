@@ -19,7 +19,7 @@
     <div >
       <h3>Department:Facilities</h3>
       <div class="content">
-            <div class="up department">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <p class="department">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
          Gravida arcu ac tortor dignissim convallis. Turpis egestas integer 
          eget aliquet nibh praesent. Adipiscing bibendum est ultricies integer. 
@@ -28,36 +28,64 @@
           mattis molestie. Urna id volutpat lacus laoreet non. Ipsum dolor sit amet 
           consectetur adipiscing. Dignissim cras tincidunt lobortis feugiat vivamus at.
            Sollicitudin nibh sit amet commodo nulla. 
-           </div>
-          <div class="up facilities"><button class="btn btn-primary">Move On to the next department</button></div><br>
+           </p>
+          <button class="facilities btn btn-primary">Move On to the next department</button><br><br><br>
     </div>
         <div class="content">
-      <p>Choose your mascot for this department(hover over each mascot to know it's meaning)</p>
+      <p class="department2">Choose your mascot for this department(hover over each mascot to know it's meaning)</p>
       <img class="mascot" src="../assets/images/oyster.jpg" (click)="openFeedback('World is my oyster')"  alt="Quantiphi">
       <img class="mascot" src="../assets/images/Meoq.jpg" (click)="openFeedback('Cats Meow')"  alt="Quantiphi">
       <img class="mascot" src="../assets/images/whale.jpg" (click)="openFeedback('Whale of a time')"  alt="Quantiphi">
       <img class="mascot" src="../assets/images/elephant.jpg" (click)="openFeedback('Elephant in the room')"  alt="Quantiphi">
       <img class="mascot" src="../assets/images/deadfish.png" (click)="openFeedback('Dead Fish')"   alt="Quantiphi">
       <img class="mascot" src="../assets/images/Goose.png" (click)="openFeedback('Wild Goose chase')"  alt="Quantiphi"><br>
-    </div>
+       </div>
+       <div >
+         <div class="mascot_name">World is my oyster</div>
+         <div class="mascot_name">Cats Meow</div>
+         <div class="mascot_name">Whale of a time</div>
+         <div class="mascot_name">Elephant in the room</div>
+         <div class="mascot_name">Dead Fish</div>
+         <div class="mascot_name">Wild Goose chase</div>
+       </div><br>
       <ng-container *ngIf="feedback">
           <div class="feedback">
-              <p>Overall rating for Facilities(1 -lowest,5 -highest)</p>
+              <p class="third_header">Overall rating for Facilities(1 -lowest,5 -highest)</p>
               <p>Share your reasons for selecting {{mascot_name}}</p>
+              <!-- <form id="user-rating-form">
+                <span class="user-rating">
+                <input type="radio" name="rating" value="5"><span class="star"></span>
+                
+                    <input type="radio" name="rating" value="4"><span class="star"></span>
+                
+                    <input type="radio" name="rating" value="3"><span class="star"></span>
+                
+                    <input type="radio" name="rating" value="2"><span class="star"></span>
+                
+                    <input type="radio" name="rating" value="1"><span class="star"></span>
+                </span>
+                </form>
+                        <p style="margin-left: 20px">You have selected <span id="selected-rating" class="selected-rating" >0</span> stars.</p> -->
+                        
+                       
+                        
+              <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
               <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
               <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
               <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
               <p><input type="checkbox"> Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
           </div>
           <div class="feedback">
-            <p>Any more reasons?</p>
+            <p class="third_header">Any more reasons?</p>
             <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
             <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
             <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
-            </div>
+            <p><input type="text" class="form-control" placeholder="Dui accumsan sit amet nulla facilisi morbi tempus iaculis."></p>
+
+          </div>
           <div class="feedback">
-            <p>suggestions</p>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            <p class="third_header">suggestions</p>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
           </div>
       </ng-container>
     </div>

@@ -7,7 +7,7 @@
     font-size:250%;
 }
 #logo{
-    width:200px;
+    width:300px;
     height:80px;
 }
 #p1{
@@ -18,14 +18,18 @@
     width:100%;
     height:30%;
 }
-/* .department{
-    width:70%;
+.department{
+    width:80%;
+    float:left;
+}
+.department2{
+    width:100%;
     float:left;
 }
 .facilities{
-    width:30%;
-    float:left;
-} */
+    /* width:30%; */
+    float:right;
+}
 .btn {
     background-color: #23b998;
     color:#ffffff;  
@@ -42,11 +46,17 @@
  }
  .mascot{
         width:15%;
-        height:150px;
+        height:130px;
      margin-left:1.66%
  }
  .mascot_name{
-     font-color:red;
+    width:15%;
+    float:left;
+    text-align: center;
+ margin-left:1.66%
+ }
+ .third_header{
+     font-weight:bold;
  }
  .feedback{
      width:30%;
@@ -55,3 +65,50 @@
      margin:1.6%;
      font-size:90%
  }
+
+ /* ratings */
+ .user-rating {
+    direction: rtl;
+    font-size: 20px;
+    unicode-bidi: bidi-override;
+    padding: 10px 30px;
+    display: inline-block;
+}
+.user-rating input {
+    opacity: 0;
+    position: relative;
+    left: -15px;
+    z-index: 2;
+    cursor: pointer;
+}
+.user-rating span.star:before {
+    color: #777777;
+    content:"ï€†";
+    /*padding-right: 5px;*/
+}
+.user-rating span.star {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+}
+.user-rating span {
+    margin-left: -15px;
+}
+.user-rating span.star:before {
+    color: #777777;
+    content:"\f006";
+    /*padding-right: 5px;*/
+}
+.user-rating input:hover + span.star:before, .user-rating input:hover + span.star ~ span.star:before, .user-rating input:checked + span.star:before, .user-rating input:checked + span.star ~ span.star:before {
+    color: #ffd100;
+    content:"\f005";
+}
+
+.selected-rating{
+    color: #ffd100;
+    font-weight: bold;
+    font-size: 3em;
+}
