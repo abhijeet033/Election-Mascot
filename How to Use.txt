@@ -1,0 +1,14 @@
+#To run this application on your local machine you should have angular installed in your machine 
+
+# to install angular follow the instruction on given link https://angular.io/guide/quickstar
+#instead of creating new project use the given project named client and run the command npm install
+#then run the command ng serve to run the the project on local
+
+or 
+
+# Use the following link to use the deployed application
+	https://salty-cove-39577.herokuapp.com/
+
+
+
+# to access the git repository visit https://github.com/abhijeet033/Election-Mascot
